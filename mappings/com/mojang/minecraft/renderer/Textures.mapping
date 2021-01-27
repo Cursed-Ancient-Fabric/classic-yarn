@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_5 com/mojang/minecraft/renderer/Textures
+	FIELD idMap textureMap Ljava/util/HashMap;
+	METHOD loadTexture (Ljava/lang/String;I)I
+		ARG 1 resourceName
+		ARG 2 mode

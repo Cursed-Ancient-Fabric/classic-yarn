@@ -28,7 +28,7 @@ import java.time.ZoneId
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-def minecraft_version = "rd-132211"
+def minecraft_version = "c0.0.11a"
 
 def ENV = System.getenv()
 
@@ -199,14 +199,14 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://raw.githubusercontent.com/Cursed-Ancient-Fabric/preclassic-intermediary/intermediary/${minecraft_version}-intermediary.tiny"
+	def url = "https://raw.githubusercontent.com/Cursed-Ancient-Fabric/classic-intermediary/intermediary/${minecraft_version}-intermediary.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
 
 task downloadIntermediaryV2(type: Download) {
 	group = buildMappingGroup
-	def url = "https://github.com/Cursed-Ancient-Fabric/preclassic-intermediary/blob/intermediary/intermediary-${minecraft_version}-intermediary-v2.jar?raw=true"
+	def url = "https://github.com/Cursed-Ancient-Fabric/classic-intermediary/blob/intermediary/intermediary-${minecraft_version}-intermediary-v2.jar?raw=true"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary-v2.jar")
 }

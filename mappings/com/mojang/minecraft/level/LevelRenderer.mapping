@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_16 com/mojang/minecraft/level/LevelRenderer
+	FIELD CHUNK_SIZE I
+	FIELD MAX_REBUILDS_PER_FRAME I
+	FIELD chunks [Lnet/minecraft/class_21;
+	FIELD level Lnet/minecraft/class_14;
+	FIELD textures Lnet/minecraft/class_5;
+	FIELD xChunks chunkX I
+	FIELD yChunks chunkY I
+	FIELD zChunks chunkZ I
+	METHOD <init> (Lnet/minecraft/class_14;Lnet/minecraft/class_5;)V
+		ARG 1 level
+		ARG 2 textures
+	METHOD getAllDirtyChunks ()Ljava/util/List;
+	METHOD pick (Lnet/minecraft/class_3;Lnet/minecraft/class_13;)V
+		ARG 1 player
+		ARG 2 frustum
+	METHOD render (Lnet/minecraft/class_3;I)V
+		ARG 1 player
+		ARG 2 layer
+	METHOD renderHit (Lnet/minecraft/class_2;II)V
+		ARG 1 hitResult
+		ARG 2 mode
+		ARG 3 tileType
+	METHOD setDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD updateDirtyChunks (Lnet/minecraft/class_3;)V
+		ARG 1 player

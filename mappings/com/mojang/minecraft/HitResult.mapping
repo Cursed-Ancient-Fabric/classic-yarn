@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_2 com/mojang/minecraft/HitResult
+	FIELD field_1 f I
+	FIELD field_3 x I
+	FIELD field_4 y I
+	FIELD field_5 z I
+	FIELD type I
+	METHOD <init> (IIIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 f

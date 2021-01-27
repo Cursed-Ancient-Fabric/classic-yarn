@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_38 com/mojang/minecraft/server/MinecraftServer
+	FIELD clientMap Ljava/util/Map;
+	FIELD clients Ljava/util/List;
+	FIELD socketServer Lnet/minecraft/class_34;
+	METHOD <init> ([BI)V
+		ARG 1 ips
+		ARG 2 port
+	METHOD disconnect (Lnet/minecraft/class_37;)V
+		ARG 1 client
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD run ()V
+	METHOD tick ()V

@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_30 com/mojang/minecraft/MinecraftApplet
+	FIELD canvas Ljava/awt/Canvas;
+	FIELD minecraft Lnet/minecraft/class_4;
+	FIELD thread Ljava/lang/Thread;
+	METHOD destroy ()V
+	METHOD init ()V
+	METHOD start ()V
+	METHOD startGameThread ()V
+	METHOD stop ()V
+	METHOD stopGameThread ()V
+	CLASS 1
+		METHOD addNotify ()V
+		METHOD removeNotify ()V

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_32 com/mojang/minecraft/comm/ServerListener
+	METHOD clientConnected (Lnet/minecraft/class_33;)V
+		ARG 1 connection
+	METHOD clientException (Lnet/minecraft/class_33;Ljava/lang/Exception;)V
+		ARG 1 connection
+		ARG 2 exception

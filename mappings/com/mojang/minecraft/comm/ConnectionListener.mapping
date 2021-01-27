@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_31 com/mojang/minecraft/comm/ConnectionListener
+	METHOD command (BILjava/nio/ByteBuffer;)V
+		ARG 1 var1
+		ARG 2 var2
+		ARG 3 var3
+	METHOD handleException (Ljava/lang/Exception;)V
+		ARG 1 exception

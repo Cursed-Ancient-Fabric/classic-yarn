@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_35 com/mojang/minecraft/gui/Font
+	FIELD charWidths [I
+	FIELD fontTexture I
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_5;)V
+		ARG 1 name
+		ARG 2 textures
+	METHOD draw (Ljava/lang/String;III)V
+		ARG 1 string
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD draw (Ljava/lang/String;IIIZ)V
+		ARG 1 string
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+		ARG 5 darken
+	METHOD drawShadow (Ljava/lang/String;III)V
+		ARG 1 string
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD width getWidth (Ljava/lang/String;)I
+		ARG 1 string

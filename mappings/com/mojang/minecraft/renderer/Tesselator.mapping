@@ -1,0 +1,40 @@
+CLASS net/minecraft/class_17 com/mojang/minecraft/renderer/Tesselator
+	FIELD MAX_FLOATS I
+	FIELD MAX_MEMORY_USE I
+	FIELD array [F
+	FIELD buffer Ljava/nio/FloatBuffer;
+	FIELD field_29 b F
+	FIELD field_30 g F
+	FIELD field_31 r F
+	FIELD field_32 u F
+	FIELD field_33 v F
+	FIELD field_59 p I
+	FIELD hasColor Z
+	FIELD hasTexture Z
+	FIELD instance Lnet/minecraft/class_17;
+	FIELD len I
+	FIELD noColor Z
+	FIELD vertices I
+	METHOD clear ()V
+	METHOD color setColor (FFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD color setColorARGB (I)V
+		ARG 1 argb
+	METHOD flush ()V
+	METHOD init ()V
+	METHOD noColor ()V
+	METHOD tex setUV (FF)V
+		ARG 1 u
+		ARG 2 v
+	METHOD vertex setVertex (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD vertexUV setVertexUV (FFFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 u
+		ARG 5 v

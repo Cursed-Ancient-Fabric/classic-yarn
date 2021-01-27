@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_7 com/mojang/minecraft/character/Cube
+	FIELD compiled Z
+	FIELD field_40 x F
+	FIELD field_41 y F
+	FIELD field_42 z F
+	FIELD list I
+	FIELD polygons [Lnet/minecraft/class_8;
+	FIELD vertices [Lnet/minecraft/class_10;
+	FIELD xRot rotationX F
+	FIELD xTexOffs textureOffsetX I
+	FIELD yRot rotationY F
+	FIELD yTexOffs textureOffsetY I
+	FIELD zRot rotationZ F
+	METHOD <init> (II)V
+		ARG 1 textureOffsetX
+		ARG 2 textureOffsetY
+	METHOD addBox (FFFIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 width
+		ARG 5 height
+		ARG 6 depth
+	METHOD render ()V
+	METHOD setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD setTexOffs (II)V
+		ARG 1 textureOffsetX
+		ARG 2 textureOffsetY
