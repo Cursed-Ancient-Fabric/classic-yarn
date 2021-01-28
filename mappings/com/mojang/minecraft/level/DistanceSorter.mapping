@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_22 com/mojang/minecraft/level/DirtyChunkSorter
+CLASS net/minecraft/class_44 com/mojang/minecraft/level/DistanceSorter
 	FIELD player Lnet/minecraft/class_3;
 	METHOD <init> (Lnet/minecraft/class_3;)V
 		ARG 1 player

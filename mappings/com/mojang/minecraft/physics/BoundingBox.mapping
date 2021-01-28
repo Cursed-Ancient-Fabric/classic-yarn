@@ -22,6 +22,10 @@ CLASS net/minecraft/class_19 com/mojang/minecraft/physics/BoundingBox
 	METHOD clipZCollide (Lnet/minecraft/class_19;F)F
 		ARG 1 boundingBox
 		ARG 2 za
+	METHOD cloneMove (FFF)Lnet/minecraft/class_19;
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
 	METHOD expand (FFF)Lnet/minecraft/class_19;
 		ARG 1 xa
 		ARG 2 ya

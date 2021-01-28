@@ -1,10 +1,8 @@
 CLASS net/minecraft/class_34 com/mojang/minecraft/comm/SocketServer
 	FIELD connections Ljava/util/List;
-	FIELD logger Ljava/util/logging/Logger;
 	FIELD serverListener Lnet/minecraft/class_32;
 	FIELD ssc Ljava/nio/channels/ServerSocketChannel;
 	METHOD <init> ([BILnet/minecraft/class_32;)V
 		ARG 1 ips
 		ARG 2 port
 		ARG 3 serverListener
-	METHOD tick ()V

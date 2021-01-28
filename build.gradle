@@ -28,7 +28,7 @@ import java.time.ZoneId
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-def minecraft_version = "c0.0.11a"
+def minecraft_version = "c0.0.13a-launcher"
 
 def ENV = System.getenv()
 
@@ -162,6 +162,8 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
 				FileUtils.copyURLToFile(new URL(manifestVersion.get().url), versionFile)
 			}
 		} else {
+			FileUtils.copyURLToFile(new URL("https://archive.org/download/Minecraft-JE-Classic/${minecraft_version}/${minecraft_version}.json"), versionFile)
+			System.out.println("If this is an Omniarchive version, re-run the build!")
 			throw new RuntimeException("No version data for Minecraft version ${minecraft_version}")
 		}
 	}

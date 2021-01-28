@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_49 com/mojang/minecraft/level/levelgen/synth/Emboss
+	FIELD synth Lnet/minecraft/class_53;
+	METHOD <init> (Lnet/minecraft/class_53;)V
+		ARG 1 synth

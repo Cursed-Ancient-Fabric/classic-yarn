@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_52 com/mojang/minecraft/level/levelgen/synth/Scale
+	FIELD synth Lnet/minecraft/class_53;
+	FIELD xScale scaleX D
+	FIELD yScale scaleY D
+	METHOD <init> (Lnet/minecraft/class_53;DD)V
+		ARG 1 synth
+		ARG 2 scaleX
+		ARG 4 scaleY

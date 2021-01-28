@@ -10,3 +10,10 @@ CLASS net/minecraft/class_2 com/mojang/minecraft/HitResult
 		ARG 3 y
 		ARG 4 z
 		ARG 5 f
+	METHOD distanceTo (Lnet/minecraft/class_3;I)F
+		ARG 1 player
+		ARG 2 editMode
+	METHOD isCloserThan (Lnet/minecraft/class_3;Lnet/minecraft/class_2;I)Z
+		ARG 1 player
+		ARG 2 hitResult
+		ARG 3 editMode

@@ -1,14 +1,29 @@
 CLASS net/minecraft/class_18 com/mojang/minecraft/level/tile/Tile
+	FIELD LIQUID_LAVA I
+	FIELD LIQUID_WATER I
+	FIELD NOT_LIQUID I
 	FIELD bush Lnet/minecraft/class_18;
+	FIELD calmLava Lnet/minecraft/class_18;
+	FIELD calmWater Lnet/minecraft/class_18;
 	FIELD dirt Lnet/minecraft/class_18;
 	FIELD empty Lnet/minecraft/class_18;
 	FIELD field_60 id I
 	FIELD grass Lnet/minecraft/class_18;
+	FIELD lava Lnet/minecraft/class_18;
 	FIELD rock Lnet/minecraft/class_18;
+	FIELD shouldTick [Z
 	FIELD stoneBrick Lnet/minecraft/class_18;
 	FIELD tex texture I
 	FIELD tiles [Lnet/minecraft/class_18;
+	FIELD unbreakable Lnet/minecraft/class_18;
+	FIELD water Lnet/minecraft/class_18;
 	FIELD wood Lnet/minecraft/class_18;
+	FIELD xx0 F
+	FIELD xx1 F
+	FIELD yy0 F
+	FIELD yy1 F
+	FIELD zz0 F
+	FIELD zz1 F
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD <init> (II)V
@@ -25,6 +40,7 @@ CLASS net/minecraft/class_18 com/mojang/minecraft/level/tile/Tile
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD getLiquidType ()I
 	METHOD getTexture (I)I
 		ARG 1 face
 	METHOD getTileAABB getTileBoundingBox (III)Lnet/minecraft/class_19;
@@ -32,6 +48,13 @@ CLASS net/minecraft/class_18 com/mojang/minecraft/level/tile/Tile
 		ARG 2 y
 		ARG 3 z
 	METHOD isSolid ()Z
+	METHOD mayPick ()Z
+	METHOD neighborChanged (Lnet/minecraft/class_14;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 type
 	METHOD render (Lnet/minecraft/class_17;Lnet/minecraft/class_14;IIII)V
 		ARG 1 tesselator
 		ARG 2 level
@@ -39,24 +62,41 @@ CLASS net/minecraft/class_18 com/mojang/minecraft/level/tile/Tile
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z
+	METHOD renderBackFace (Lnet/minecraft/class_17;IIII)V
+		ARG 1 tesselator
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD renderFace (Lnet/minecraft/class_17;IIII)V
 		ARG 1 tesselator
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 face
-	METHOD renderFaceNoTexture (Lnet/minecraft/class_17;IIII)V
-		ARG 1 tesselator
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 face
-	METHOD shouldRenderFace (Lnet/minecraft/class_14;IIII)Z
+	METHOD renderFaceNoTexture (Lnet/minecraft/class_3;Lnet/minecraft/class_17;IIII)V
+		ARG 1 player
+		ARG 2 tesselator
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 face
+	METHOD setShape (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD setTicking (Z)V
+		ARG 1 tick
+	METHOD shouldRenderFace (Lnet/minecraft/class_14;IIIII)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 layer
+		ARG 6 face
 	METHOD tick (Lnet/minecraft/class_14;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x

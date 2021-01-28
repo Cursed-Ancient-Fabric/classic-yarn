@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_46 com/mojang/minecraft/level/LevelLoaderListener
+	METHOD beginLevelLoading (Ljava/lang/String;)V
+		ARG 1 var1
+	METHOD levelLoadUpdate (Ljava/lang/String;)V
+		ARG 1 var1

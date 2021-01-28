@@ -8,6 +8,6 @@ CLASS net/minecraft/class_30 com/mojang/minecraft/MinecraftApplet
 	METHOD startGameThread ()V
 	METHOD stop ()V
 	METHOD stopGameThread ()V
-	CLASS 1
+	CLASS 1 AppletNotifier
 		METHOD addNotify ()V
 		METHOD removeNotify ()V

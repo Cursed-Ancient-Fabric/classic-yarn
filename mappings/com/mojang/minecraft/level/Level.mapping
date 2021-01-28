@@ -1,17 +1,19 @@
 CLASS net/minecraft/class_14 com/mojang/minecraft/level/Level
 	FIELD TILE_UPDATE_INTERVAL I
+	FIELD addend I
 	FIELD blocks [B
+	FIELD createTime J
+	FIELD creator Ljava/lang/String;
 	FIELD depth I
 	FIELD height I
 	FIELD levelListeners Ljava/util/ArrayList;
 	FIELD lightDepths [I
+	FIELD multiplier I
+	FIELD name Ljava/lang/String;
+	FIELD randValue I
 	FIELD random Ljava/util/Random;
 	FIELD unprocessed I
 	FIELD width I
-	METHOD <init> (III)V
-		ARG 1 width
-		ARG 2 height
-		ARG 3 depth
 	METHOD addListener (Lnet/minecraft/class_15;)V
 		ARG 1 levelListener
 	METHOD calcLightDepths calculateLightDepths (IIII)V
@@ -19,8 +21,14 @@ CLASS net/minecraft/class_14 com/mojang/minecraft/level/Level
 		ARG 2 y0
 		ARG 3 x1
 		ARG 4 y1
+	METHOD containsAnyLiquid (Lnet/minecraft/class_19;)Z
+		ARG 1 box
+	METHOD containsLiquid (Lnet/minecraft/class_19;I)Z
+		ARG 1 box
+		ARG 2 liquidId
 	METHOD getCubes (Lnet/minecraft/class_19;)Ljava/util/ArrayList;
 		ARG 1 boundingBox
+	METHOD getGroundLevel ()F
 	METHOD getTile (III)I
 		ARG 1 x
 		ARG 2 y
@@ -37,11 +45,24 @@ CLASS net/minecraft/class_14 com/mojang/minecraft/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD load ()Z
+	METHOD neighborChanged (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 type
 	METHOD removeListener (Lnet/minecraft/class_15;)V
 		ARG 1 levelListener
-	METHOD save ()V
+	METHOD setData (III[B)V
+		ARG 1 width
+		ARG 2 depth
+		ARG 3 height
+		ARG 4 blocks
 	METHOD setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 type
+	METHOD setTileNoUpdate (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

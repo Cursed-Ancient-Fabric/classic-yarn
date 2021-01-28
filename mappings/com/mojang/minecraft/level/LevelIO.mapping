@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_45 com/mojang/minecraft/level/LevelIO
+	FIELD CURRENT_VERSION I
+	FIELD MAGIC_NUMBER I
+	FIELD error Ljava/lang/String;
+	FIELD levelLoaderListener Lnet/minecraft/class_46;
+	METHOD <init> (Lnet/minecraft/class_46;)V
+		ARG 1 levelLoaderListener
+	METHOD load (Lnet/minecraft/class_14;Ljava/io/InputStream;)Z
+		ARG 1 level
+		ARG 2 in
+	METHOD loadLegacy (Lnet/minecraft/class_14;Ljava/io/InputStream;)Z
+		ARG 1 level
+		ARG 2 in
+	METHOD save (Lnet/minecraft/class_14;Ljava/io/OutputStream;)V
+		ARG 1 level
+		ARG 2 out

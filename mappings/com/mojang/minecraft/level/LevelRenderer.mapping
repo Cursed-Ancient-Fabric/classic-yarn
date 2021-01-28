@@ -2,7 +2,13 @@ CLASS net/minecraft/class_16 com/mojang/minecraft/level/LevelRenderer
 	FIELD CHUNK_SIZE I
 	FIELD MAX_REBUILDS_PER_FRAME I
 	FIELD chunks [Lnet/minecraft/class_21;
+	FIELD drawDistance I
+	FIELD field_75 X1 F
+	FIELD field_76 Y1 F
+	FIELD field_77 Z1 F
 	FIELD level Lnet/minecraft/class_14;
+	FIELD sortedChunks [Lnet/minecraft/class_21;
+	FIELD surroundLists I
 	FIELD textures Lnet/minecraft/class_5;
 	FIELD xChunks chunkX I
 	FIELD yChunks chunkY I
@@ -10,6 +16,10 @@ CLASS net/minecraft/class_16 com/mojang/minecraft/level/LevelRenderer
 	METHOD <init> (Lnet/minecraft/class_14;Lnet/minecraft/class_5;)V
 		ARG 1 level
 		ARG 2 textures
+	METHOD compileSurroundingGround ()V
+	METHOD compileSurroundingWater ()V
+	METHOD cull (Lnet/minecraft/class_13;)V
+		ARG 1 frustum
 	METHOD getAllDirtyChunks ()Ljava/util/List;
 	METHOD pick (Lnet/minecraft/class_3;Lnet/minecraft/class_13;)V
 		ARG 1 player
@@ -17,10 +27,18 @@ CLASS net/minecraft/class_16 com/mojang/minecraft/level/LevelRenderer
 	METHOD render (Lnet/minecraft/class_3;I)V
 		ARG 1 player
 		ARG 2 layer
-	METHOD renderHit (Lnet/minecraft/class_2;II)V
-		ARG 1 hitResult
-		ARG 2 mode
-		ARG 3 tileType
+	METHOD renderHit (Lnet/minecraft/class_3;Lnet/minecraft/class_2;II)V
+		ARG 1 player
+		ARG 2 hitResult
+		ARG 3 mode
+		ARG 4 tileType
+	METHOD renderHitOutline (Lnet/minecraft/class_3;Lnet/minecraft/class_2;II)V
+		ARG 1 player
+		ARG 2 hitResult
+		ARG 3 mode
+		ARG 4 tileType
+	METHOD renderSurroundingGround ()V
+	METHOD renderSurroundingWater ()V
 	METHOD setDirty (IIIIII)V
 		ARG 1 x0
 		ARG 2 y0
@@ -28,5 +46,6 @@ CLASS net/minecraft/class_16 com/mojang/minecraft/level/LevelRenderer
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD toggleDrawDistance ()V
 	METHOD updateDirtyChunks (Lnet/minecraft/class_3;)V
 		ARG 1 player

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_41 com/mojang/minecraft/gui/PauseScreen
+	FIELD buttons Ljava/util/List;
+	METHOD buttonClicked (Lnet/minecraft/class_40;)V
+		ARG 1 button

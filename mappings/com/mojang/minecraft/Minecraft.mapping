@@ -12,6 +12,8 @@ CLASS net/minecraft/class_4 com/mojang/minecraft/Minecraft
 	FIELD fullscreen Z
 	FIELD height I
 	FIELD hitResult Lnet/minecraft/class_2;
+	FIELD levelGen Lnet/minecraft/class_47;
+	FIELD levelIo Lnet/minecraft/class_45;
 	FIELD level Lnet/minecraft/class_14;
 	FIELD levelRenderer Lnet/minecraft/class_16;
 	FIELD mouseGrabbed Z
@@ -21,9 +23,12 @@ CLASS net/minecraft/class_4 com/mojang/minecraft/Minecraft
 	FIELD pause Z
 	FIELD player Lnet/minecraft/class_3;
 	FIELD running Z
+	FIELD screen Lnet/minecraft/class_42;
 	FIELD selectBuffer Ljava/nio/IntBuffer;
 	FIELD textures Lnet/minecraft/class_5;
 	FIELD timer Lnet/minecraft/class_6;
+	FIELD title Ljava/lang/String;
+	FIELD user Lnet/minecraft/class_39;
 	FIELD viewportBuffer Ljava/nio/IntBuffer;
 	FIELD width I
 	FIELD yMouseAxis mouseY I
@@ -32,16 +37,22 @@ CLASS net/minecraft/class_4 com/mojang/minecraft/Minecraft
 		ARG 2 width
 		ARG 3 height
 		ARG 4 fullscreen
+	METHOD attemptSaveLevel ()V
+	METHOD checkError ()V
 	METHOD checkGlError (Ljava/lang/String;)V
 		ARG 1 string
 	METHOD destroy ()V
 	METHOD drawGui (F)V
 		ARG 1 degree
+	METHOD generateNewLevel ()V
 	METHOD getBuffer (FFFF)Ljava/nio/FloatBuffer;
 		ARG 1 a
 		ARG 2 b
 		ARG 3 c
 		ARG 4 d
+	METHOD grabMouse ()V
+	METHOD handleMouseClick ()V
+	METHOD init ()V
 	METHOD isFree (Lnet/minecraft/class_19;)Z
 		ARG 1 boundingBox
 	METHOD main ([Ljava/lang/String;)V
@@ -50,8 +61,12 @@ CLASS net/minecraft/class_4 com/mojang/minecraft/Minecraft
 		ARG 1 degree
 	METHOD pick (F)V
 		ARG 1 degree
+	METHOD releaseMouse ()V
 	METHOD render (F)V
 		ARG 1 degree
+	METHOD run ()V
+	METHOD setScreen (Lnet/minecraft/class_42;)V
+		ARG 1 screen
 	METHOD setupCamera (F)V
 		ARG 1 degree
 	METHOD setupFog (I)V
@@ -61,3 +76,4 @@ CLASS net/minecraft/class_4 com/mojang/minecraft/Minecraft
 		ARG 2 x
 		ARG 3 y
 	METHOD stop ()V
+	METHOD tick ()V

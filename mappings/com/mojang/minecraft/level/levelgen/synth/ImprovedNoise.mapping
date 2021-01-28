@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_50 com/mojang/minecraft/level/levelgen/synth/ImprovedNoise
+	FIELD field_78 p [I
+	FIELD scale D
+	METHOD <init> (Ljava/util/Random;)V
+		ARG 1 random
+	METHOD fade (D)D
+		ARG 1 t
+	METHOD grad (IDDD)D
+		ARG 1 hash
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD lerp (DDD)D
+		ARG 1 t
+		ARG 3 a
+		ARG 5 b
+	METHOD noise (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_48 com/mojang/minecraft/level/levelgen/synth/Distort
+	FIELD distort Lnet/minecraft/class_53;
+	FIELD source Lnet/minecraft/class_53;
+	METHOD <init> (Lnet/minecraft/class_53;Lnet/minecraft/class_53;)V
+		ARG 1 source
+		ARG 2 distort

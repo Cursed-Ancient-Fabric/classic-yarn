@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_53 com/mojang/minecraft/level/levelgen/synth/Synth
+	METHOD create (II)[D
+		ARG 1 width
+		ARG 2 height
+	METHOD getValue (DD)D
+		ARG 1 x
+		ARG 3 y

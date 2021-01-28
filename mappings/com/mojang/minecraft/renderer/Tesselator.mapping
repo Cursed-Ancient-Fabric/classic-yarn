@@ -15,15 +15,19 @@ CLASS net/minecraft/class_17 com/mojang/minecraft/renderer/Tesselator
 	FIELD len I
 	FIELD noColor Z
 	FIELD vertices I
+	METHOD begin ()V
 	METHOD clear ()V
-	METHOD color setColor (FFF)V
+	METHOD color setColor (BBB)V
 		ARG 1 r
 		ARG 2 g
 		ARG 3 b
 	METHOD color setColorARGB (I)V
 		ARG 1 argb
-	METHOD flush ()V
-	METHOD init ()V
+	METHOD color setColor (III)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD end ()V
 	METHOD noColor ()V
 	METHOD tex setUV (FF)V
 		ARG 1 u

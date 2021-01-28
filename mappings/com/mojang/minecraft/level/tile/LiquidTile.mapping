@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_55 com/mojang/minecraft/level/tile/LiquidTile
+	FIELD calmTileId I
+	FIELD liquidType I
+	FIELD spreadSpeed I
+	FIELD tileId I
+	METHOD checkWater (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 depth
+	METHOD updateWater (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 depth

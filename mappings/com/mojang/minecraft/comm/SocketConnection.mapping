@@ -5,7 +5,6 @@ CLASS net/minecraft/class_33 com/mojang/minecraft/comm/SocketConnection
 	FIELD connectionListener Lnet/minecraft/class_31;
 	FIELD field_66 in Ljava/io/BufferedInputStream;
 	FIELD lastRead J
-	FIELD maxBlocksPerIteration I
 	FIELD out Ljava/io/BufferedOutputStream;
 	FIELD readBuffer Ljava/nio/ByteBuffer;
 	FIELD socketChannel Ljava/nio/channels/SocketChannel;
@@ -17,16 +16,5 @@ CLASS net/minecraft/class_33 com/mojang/minecraft/comm/SocketConnection
 		ARG 2 port
 	METHOD <init> (Ljava/nio/channels/SocketChannel;)V
 		ARG 1 socketChannel
-	METHOD clearReadBytes ()V
-	METHOD clearSentBytes ()V
-	METHOD disconnect ()V
-	METHOD getBuffer ()Ljava/nio/ByteBuffer;
-	METHOD getIp ()Ljava/lang/String;
-	METHOD getReadBytes ()I
-	METHOD getSentBytes ()I
-	METHOD isConnected ()Z
 	METHOD setConnectionListener (Lnet/minecraft/class_31;)V
 		ARG 1 connectionListener
-	METHOD setMaxBlocksPerIteration (I)V
-		ARG 1 maxBlocksPerIteration
-	METHOD tick ()V

@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_3 com/mojang/minecraft/Player
+	FIELD KEY_DOWN I
+	FIELD KEY_JUMP I
+	FIELD KEY_LEFT I
+	FIELD KEY_RIGHT I
+	FIELD KEY_UP I
+	FIELD keys [Z
+	METHOD releaseAllKeys ()V
+	METHOD setKey (IZ)V
+		ARG 1 key
+		ARG 2 state

@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_40 com/mojang/minecraft/gui/Button
+	FIELD field_67 h I
+	FIELD field_68 id I
+	FIELD field_69 w I
+	FIELD field_70 x I
+	FIELD field_71 y I
+	FIELD msg text Ljava/lang/String;
+	METHOD <init> (IIIIILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 w
+		ARG 5 h
+		ARG 6 text

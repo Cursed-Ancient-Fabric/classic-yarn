@@ -17,6 +17,7 @@ CLASS net/minecraft/class_21 com/mojang/minecraft/level/Chunk
 	FIELD totalTime J
 	FIELD totalUpdates I
 	FIELD updates I
+	FIELD visible Z
 	METHOD <init> (Lnet/minecraft/class_14;IIIIII)V
 		ARG 1 level
 		ARG 2 x0
@@ -33,4 +34,5 @@ CLASS net/minecraft/class_21 com/mojang/minecraft/level/Chunk
 		ARG 1 layer
 	METHOD render (I)V
 		ARG 1 layer
+	METHOD reset ()V
 	METHOD setDirty ()V

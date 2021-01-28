@@ -12,6 +12,7 @@ CLASS net/minecraft/class_1 com/mojang/minecraft/Entity
 	FIELD field_8 xd F
 	FIELD field_9 xo F
 	FIELD heightOffset F
+	FIELD horizontalCollision Z
 	FIELD level Lnet/minecraft/class_14;
 	FIELD onGround Z
 	FIELD removed Z
@@ -19,6 +20,12 @@ CLASS net/minecraft/class_1 com/mojang/minecraft/Entity
 	FIELD yRot rotationY F
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 level
+	METHOD isFree (FFF)Z
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD isInLava ()Z
+	METHOD isInWater ()Z
 	METHOD isLit ()Z
 	METHOD move (FFF)V
 		ARG 1 xa
@@ -31,6 +38,7 @@ CLASS net/minecraft/class_1 com/mojang/minecraft/Entity
 	METHOD remove ()V
 	METHOD render (F)V
 		ARG 1 a
+	METHOD resetPos ()V
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y

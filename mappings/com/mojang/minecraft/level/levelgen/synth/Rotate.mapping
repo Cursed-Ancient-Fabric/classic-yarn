@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_51 com/mojang/minecraft/level/levelgen/synth/Rotate
+	FIELD cos D
+	FIELD sin D
+	FIELD synth Lnet/minecraft/class_53;
+	METHOD <init> (Lnet/minecraft/class_53;D)V
+		ARG 1 synth
+		ARG 2 angle
